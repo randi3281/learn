@@ -12,8 +12,9 @@
 <body>
     <div class="form">
 
-        <img
-            src="{{asset('oauth_public/image/google.png')}}">
+        <a href="{{ route('oauth.redirect') }}">
+            <img src="{{ asset('oauth_public/image/google.png') }}">
+        </a>
 
         {{-- <input type="email" name="email" placeholder="Email" />
 
