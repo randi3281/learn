@@ -21,5 +21,6 @@ class oauthController extends Controller
     public function callback()
     {
         $user = Socialite::driver('google')->user();
+        dd($user);
     }
 }
