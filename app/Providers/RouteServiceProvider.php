@@ -41,6 +41,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('random')
                 ->group(base_path('routes/random/random.php'));
 
+            Route::middleware('web')
+                ->name('oauth.')
+                ->prefix('oauth')
+                ->group(base_path('routes/oauth/oauth.php'));
+
         });
     }
 }
