@@ -46,6 +46,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('oauth')
                 ->group(base_path('routes/oauth/oauth.php'));
 
+            Route::middleware('web')
+                ->name('middleware.')
+                ->prefix('middleware')
+                ->group(base_path('routes/middleware/index.php'));
+
         });
     }
 }
